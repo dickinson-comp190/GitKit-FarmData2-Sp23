@@ -1,6 +1,6 @@
 # FarmData2 Modules #
 
-FarmData2 is built using Drupal modules that run within FarmOS. The _FieldKit_ and _BarnKit_ tabs in the FarmData2 interface are created by modules. The _FD2 Example_ tab is created by a sample module and can be used as a sandbox in which to learn about and experiment FarmData2 modules like those that produce the _FieldKit_ and _BarnKit_ tabs.
+FarmData2 is built using Drupal modules that run within FarmOS. The _FieldKit_ and _BarnKit_ tabs in the FarmData2 interface are created by modules. The _FD2 Example_ tab is created by a sample module and can be used as a sandbox in which to learn about and experiment with FarmData2 modules like those that produce the _FieldKit_ and _BarnKit_ tabs.
 
 ## FarmData2 Module Structure ##
 
@@ -75,7 +75,7 @@ To add a new sub-tab to the `xyz` module:
 
 ### JavaScript and CSS Libraries ###
 
-JavaScript and CSS libraries can be included in module by adding them to the module configuration files (i.e. `.info` and `.module`).  
+JavaScript and CSS libraries can be included in a module by adding them to the module configuration files (i.e. `.info` and `.module`).  
 
 #### Local Libraries ####
 
@@ -191,7 +191,7 @@ Each sub-tab will have have an associated set of end-to-end tests. For example, 
 
 The `cypress` directory within a module directory (e.g.`fd2_example/cypress`) will contain _module level_ tests. These are tests that apply to the main tab rather than to individual sub-tabs.  For example, in the `fd2_example` module:
    - `fd2vars.spec.js` tests that the Predefined Module Variables (discuessed above) exist and are accessible.
-   - `visibility.spec.js` tests that the _FD2 Example_ tab is visible for the `admin`, _manager_ and _worker_ users but not for a _guest_.
+   - `visibility.spec.js` tests that the _FD2 Example_ tab is visible for the `admin`, `manager`, and `worker` users but not for a `guest`.
 
 Resources and references for writing Cypress end-to-end tests can be found in the [ONBOARDING.md](https://github.com/DickinsonCollege/FarmData2/blob/main/ONBOARDING.md#cypress) file.  
 
